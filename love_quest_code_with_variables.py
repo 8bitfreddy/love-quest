@@ -16,12 +16,13 @@ from prettytable import PrettyTable
 
 #-----------------------------------------#
 # IP Plot
+first_line = ['Каждый октет - это десятичное число до точки число до точки.']
+second_line = ['Посмотри в таблице ASCII значения и выбери один из двух...']
 #
 #
 #
 #
-#
-a = ["q"]
+#a = ["q"]
 
 
 
@@ -77,6 +78,8 @@ def ip_plot():
     #     print(line.strip())
     #     time.sleep(2)
     # file1.close()
+    print("\033[32m {}".format(first_line))
+    print("\033[32m {}".format(second_line))
     print('На, держи, тебе пригодится для разгадки задачи с IP адресами')
     #os.startfile(r'C:\Users\Илья\Downloads\asckii.png')
 
@@ -104,55 +107,25 @@ def ip_addr():
             time.sleep(1)
             print("\033[31m {}".format('Запиши его - love'))
 
-#you = 121.111.117 ascki
-
-#intro()
-#pwd()
-#ip_plot()
-
-import asckii as fl
-fl.ascii_table()
-
-#print("\033[32m {}" .format(ascki_table()))
-#time.sleep(2)
-ip_addr()
+#you = 121.111.117 ascii
 
 
 
-'''
+if __name__ == '__main__':
+    # intro()
+    # pwd()
+    ip_plot()
 
-print(os.path.abspath(os.curdir)) #check dir
+    # import ascii as fl
+    # fl.ascii_table()
+    # print("\033[32m {}" .format(ascki_table()))
+    # time.sleep(2)
+    # ip_addr()
 
-# ------------------------------------
-# | DEC | HEX | OCT | Char |
-# |97   | 61  | 141 |  a   |
-# |98   | 62  | 142 |  b   |
-# |99   | 63  | 143 |  c   |
-# |100  | 64  | 144 |  d   |
-# |101  | 65  | 145 |  e   |
-# |102  | 66  | 146 |  f   |
-# |103  | 67  | 147 |  g   |
-# |104  | 68  | 150 |  h   |
-# |105  | 69  | 151 |  i   |
-# |106  | 6A  | 152 |  j   |
-# |107  | 6B  | 153 |  k   |
-# |108  | 6C  | 154 |  l   |
-# |109  | 6D  | 155 |  m   |
-# |110  | 6E  | 156 |  n   |
-# |111  | 6F  | 157 |  o   |
-# |112  | 70  | 160 |  p   |
-# |113  | 71  | 161 |  q   |
-# |114  | 72  | 162 |  r   |
-# |115  | 73  | 163 |  s   |
-# |116  | 74  | 164 |  t   |
-# |117  | 75  | 165 |  u   |
-# |118  | 76  | 166 |  v   |
-# |119  | 77  | 167 |  w   |
-# |120  | 78  | 170 |  x   |
-# |121  | 79  | 171 |  y   |
-# |122  | 7A  | 172 |  z   |
 
-'''
+
+
+
 
 
 
