@@ -6,10 +6,10 @@ from prettytable import PrettyTable
 import ascii as fl
 
 # Intro Plot
-#itr_first_line = ['']
-#itr_second_line = ['']
-#itr_third_line = ['']
-#itr_fours_line = ['']
+#intro_first_line = ['']
+#intro_second_line = ['']
+#intro_third_line = ['']
+#intro_fours_line = ['']
 
 #
 #
