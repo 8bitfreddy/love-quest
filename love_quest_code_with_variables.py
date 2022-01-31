@@ -2,7 +2,7 @@
 import os
 import time
 #import globals
-#from prettytable import PrettyTable
+from prettytable import PrettyTable
 import ascii as fl
 
 # Intro Plot
@@ -132,16 +132,16 @@ def ip_addr():
 if __name__ == '__main__':
     # intro()
     # pwd()
-<<<<<<< HEAD
+
     #ip_plot()
 
     # import ascii as fl
     # fl.ascii_table()
-=======
+
     ip_plot()
     time.sleep(1)
     fl.ascii_table()
->>>>>>> 4e2ccce36596b3c21d6b7a7dedfde17c92e68fb8
+
     # print("\033[32m {}" .format(ascki_table()))
     # time.sleep(2)
     # ip_addr()
