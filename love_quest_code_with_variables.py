@@ -28,7 +28,7 @@ ip_second_line = ['Посмотри в таблице ASCII значения и 
 #
 #
 #a = ["q"]
-
+#
 
 
 
@@ -139,7 +139,7 @@ if __name__ == '__main__':
     # time.sleep(2)
     # ip_addr()
 
-
+#inst: @ilyanixx13
 
 
 
