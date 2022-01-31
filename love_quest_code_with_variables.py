@@ -2,10 +2,15 @@
 import os
 import time
 #import globals
-from prettytable import PrettyTable
+#from prettytable import PrettyTable
+import ascii as fl
 
 # Intro Plot
-#
+#itr_first_line = ['']
+#itr_second_line = ['']
+#itr_third_line = ['']
+#itr_fours_line = ['']
+
 #
 #
 #
@@ -16,19 +21,22 @@ from prettytable import PrettyTable
 
 #-----------------------------------------#
 # IP Plot
-first_line = ['Каждый октет - это десятичное число до точки число до точки.']
-second_line = ['Посмотри в таблице ASCII значения и выбери один из двух...']
+ip_first_line = ['Каждый октет - это десятичное число до точки число до точки.']
+ip_second_line = ['Посмотри в таблице ASCII значения и выбери один из двух...']
 #
 #
 #
 #
 #a = ["q"]
-
+#
 
 
 
 #-----------------------------------------#
 # Intro Plot
+#
+#
+#
 #
 
 
@@ -78,9 +86,12 @@ def ip_plot():
     #     print(line.strip())
     #     time.sleep(2)
     # file1.close()
-    print("\033[32m {}".format(first_line))
-    print("\033[32m {}".format(second_line))
+    print("\033[32m {}".format(ip_first_line))
+    time.sleep(1)
+    print("\033[32m {}".format(ip_second_line))
+    time.sleep(1)
     print('На, держи, тебе пригодится для разгадки задачи с IP адресами')
+
     #os.startfile(r'C:\Users\Илья\Downloads\asckii.png')
 
 
@@ -109,15 +120,28 @@ def ip_addr():
 
 #you = 121.111.117 ascii
 
+#-------------------------------------------------------------------#
+#                                                                   #
+#                                                                   #
+#                           !Functions!                             #
+#                                |                                  #
+#                                v                                  #
+#-------------------------------------------------------------------#
 
 
 if __name__ == '__main__':
     # intro()
     # pwd()
+<<<<<<< HEAD
     #ip_plot()
 
     # import ascii as fl
     # fl.ascii_table()
+=======
+    ip_plot()
+    time.sleep(1)
+    fl.ascii_table()
+>>>>>>> 4e2ccce36596b3c21d6b7a7dedfde17c92e68fb8
     # print("\033[32m {}" .format(ascki_table()))
     # time.sleep(2)
     # ip_addr()
