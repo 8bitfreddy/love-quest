@@ -30,6 +30,9 @@ second_line = ['Посмотри в таблице ASCII значения и в�
 #-----------------------------------------#
 # Intro Plot
 #
+#
+#
+#
 
 
 
@@ -79,8 +82,11 @@ def ip_plot():
     #     time.sleep(2)
     # file1.close()
     print("\033[32m {}".format(first_line))
+    time.sleep(1)
     print("\033[32m {}".format(second_line))
+    time.sleep(1)
     print('На, держи, тебе пригодится для разгадки задачи с IP адресами')
+
     #os.startfile(r'C:\Users\Илья\Downloads\asckii.png')
 
 
@@ -115,9 +121,9 @@ if __name__ == '__main__':
     # intro()
     # pwd()
     ip_plot()
-
-    # import ascii as fl
-    # fl.ascii_table()
+time.sleep(1)
+import ascii as fl
+fl.ascii_table()
     # print("\033[32m {}" .format(ascki_table()))
     # time.sleep(2)
     # ip_addr()
