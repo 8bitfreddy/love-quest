@@ -114,7 +114,7 @@ def ip_addr():
 if __name__ == '__main__':
     # intro()
     # pwd()
-    ip_plot()
+    #ip_plot()
 
     # import ascii as fl
     # fl.ascii_table()
