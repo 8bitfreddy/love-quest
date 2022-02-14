@@ -3,7 +3,7 @@ import os
 import time
 #import globals
 from prettytable import PrettyTable
-import ascii as fl
+#import ascii as fl
 
 # Intro Plot
 #intro_first_line = ['']
@@ -23,13 +23,55 @@ import ascii as fl
 #-----------------------------------------#
 # IP Plot
 ip_first_line = ['Каждый октет - это десятичное число до точки число до точки.']
-ip_second_line = ['Посмотри в таблице ASCII значения и выбери один из двух...']
+ip_second_line = ['Посмотри в таблице ASCII значения и выбери IP один из двух...']
 #
 #
 #
 #
 #a = ["q"]
 #
+def ascii_table():
+    asc_header = ['DEC', 'HEX', 'OCT', 'Char']
+    asc_data = ['97', '61',  '141', 'a',
+                '98', '62',  '142', 'b',
+                '99', '63',  '143', 'c',
+                '100', '64', '144', 'd',
+                '101', '65', '145', 'e',
+                '102', '66', '146', 'f',
+                '103', '67', '147', 'g',
+                '104', '68', '150', 'h',
+                '105', '69', '151', 'i',
+                '106', '6A', '152', 'j',
+                '107', '6B', '153', 'k',
+                '108', '6C', '154', 'l',
+                '109', '6D', '155', 'm',
+                '110', '6E', '156', 'n',
+                '111', '6F', '157', 'o',
+                '112', '70', '160', 'p',
+                '113', '71', '161', 'q',
+                '114', '72', '162', 'r',
+                '115', '73', '163', 's',
+                '116', '74', '164', 't',
+                '117', '75', '165', 'u',
+                '118', '76', '166', 'v',
+                '119', '77', '167', 'w',
+                '120', '78', '170', 'x',
+                '121', '79', '171', 'y',
+                '122', '7A', '172', 'z',
+                ]
+
+    columns = len(asc_header)
+
+    asc_table = PrettyTable(asc_header)
+
+    data = asc_data[:]
+    while data:
+        asc_table.add_row(data[:columns])
+        data = data[columns:]
+    #print(asc_table)
+    print("\033[32m {}".format(asc_table))
+
+
 
 
 
@@ -124,11 +166,12 @@ def ip_addr():
 
 
 def close_prog():
-    print('Чтобы выйти, нажми Q')
+    print("\033[32m {}".format('Чтобы выйти, нажми Q'))
     cls = input()
     while cls != 'q':
         cls = input()
-    print('Пока')
+    print("\033[32m {}".format('Пока'))
+
 #-------------------------------------------------------------------#
 #                                                                   #
 #                                                                   #
@@ -148,7 +191,8 @@ if __name__ == '__main__':
     # fl.ascii_table()
 
     #ip_plot()
-    #time.sleep(1)
+    time.sleep(1)
+    ascii_table()
     #fl.ascii_table()
 
     # print("\033[32m {}" .format(ascki_table()))
