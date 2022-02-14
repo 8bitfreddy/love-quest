@@ -121,6 +121,14 @@ def ip_addr():
 
 #you = 121.111.117 ascii
 
+
+
+def close_prog():
+    print('Чтобы выйти, нажми Q')
+    cls = input()
+    while cls != 'q':
+        cls = input()
+    print('Пока')
 #-------------------------------------------------------------------#
 #                                                                   #
 #                                                                   #
@@ -139,13 +147,14 @@ if __name__ == '__main__':
     # import ascii as fl
     # fl.ascii_table()
 
-    ip_plot()
-    time.sleep(1)
-    fl.ascii_table()
+    #ip_plot()
+    #time.sleep(1)
+    #fl.ascii_table()
 
     # print("\033[32m {}" .format(ascki_table()))
     # time.sleep(2)
     # ip_addr()
+    close_prog()
 
 #inst: @ilyanixx13
 
