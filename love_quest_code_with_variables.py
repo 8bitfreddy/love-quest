@@ -3,9 +3,13 @@ import os
 import time
 #import globals
 from prettytable import PrettyTable
+<<<<<<< HEAD
 import ascii as fl
 import keyboard
 #Intro_Plot
+=======
+#import ascii as fl
+>>>>>>> 5f187000bf1136ed26a9291022bb66bd93e6399d
 
 intro_first_line = 'Привет, я - искусственный интеллект Tanides v.2.001.'
 intro_second_line = 'Квест изи, поверь, мы вместе решим некоторые задачки и всё будет супер! Юхуу!'
@@ -15,13 +19,22 @@ intro_fours_line = 'Но он упустил важную деталь, он н�
 
 #-----------------------------------------#
 # IP Plot
+<<<<<<< HEAD
 ip_first_line = 'Каждый октет - это десятичное число до точки число до точки.'
 ip_second_line = 'Посмотри в таблице ASCII значения и выбери один из двух...'
+=======
+ip_first_line = ['Каждый октет - это десятичное число до точки число до точки.']
+ip_second_line = ['Посмотри в таблице ASCII значения и выбери IP один из двух...']
+>>>>>>> 5f187000bf1136ed26a9291022bb66bd93e6399d
 #
 #
 #
 #
 #a = ["q"]
+<<<<<<< HEAD
+=======
+#
+>>>>>>> 5f187000bf1136ed26a9291022bb66bd93e6399d
 def ascii_table():
     asc_header = ['DEC', 'HEX', 'OCT', 'Char']
     asc_data = ['97', '61',  '141', 'a',
@@ -63,6 +76,10 @@ def ascii_table():
     #print(asc_table)
     print("\033[32m {}".format(asc_table))
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f187000bf1136ed26a9291022bb66bd93e6399d
 
 
 
@@ -183,6 +200,15 @@ def final():
             print("\033[31m {}".format('You!'))
 
 
+
+
+def close_prog():
+    print("\033[32m {}".format('Чтобы выйти, нажми Q'))
+    cls = input()
+    while cls != 'q':
+        cls = input()
+    print("\033[32m {}".format('Пока'))
+
 #-------------------------------------------------------------------#
 #                                                                   #
 #                                                                   #
@@ -211,8 +237,9 @@ if __name__ == '__main__':
     # import ascii as fl
     # fl.ascii_table()
 
-    ip_plot()
+    #ip_plot()
     time.sleep(1)
+<<<<<<< HEAD
     print('Скачиваю тебе таблицу из Пентагона')
     s = '|'
     for i in range(101):
@@ -226,6 +253,18 @@ if __name__ == '__main__':
     # time.sleep(2)
     ip_addr()
     final()
+=======
+    ascii_table()
+    #fl.ascii_table()
+
+    # print("\033[32m {}" .format(ascki_table()))
+    # time.sleep(2)
+    # ip_addr()
+    close_prog()
+
+#inst: @ilyanixx13
+
+>>>>>>> 5f187000bf1136ed26a9291022bb66bd93e6399d
 
 
 
